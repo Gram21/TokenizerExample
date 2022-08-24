@@ -21,7 +21,7 @@ public class Tokenizer {
     private Properties getProperties(Language language) {
         Properties properties = new Properties();
         properties.setProperty("annotators", "tokenize");
-        // if we do not want to set a specific language, the following line is unnecessary. Uses "unspecified" and with it the English tokenizer
+        // if we do not want to set a specific language, the following line is unnecessary. Then, it uses "unspecified" and with it the English tokenizer
         properties.setProperty("tokenize.language", language.value());
         return properties;
     }
